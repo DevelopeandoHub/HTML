@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <title>Etiquetas HTML</title> <!-- Título del documento que aparece en la pestaña del buscador -->
+        
+        <meta name="author" content="Developeando"> <!-- Etiqueta que brinda al buscador información extra sobre el documento -->
+        <meta name="description" content="Lección de Etiquetas y Atributos"> <!-- Como por ejemplo la descripción -->
+        <meta name="keywords" content="html, etiquetas, atributos"> <!-- Las keywords para encontrarlo y el autor -->
+
+        <link rel="stylesheet" href="style.css"> <!-- La etiqueta link nos permite vincular nuestro documento con archivos externos como una hoja de estilos css -->
+
+        <style></style> <!-- La etiqueta style nos permite definir estilos CSS para nuestro documento -->
+    </head>
+<body>
+    <!-- Etiquetas para estructurar un documento HTML -->
+        <header></header> <!-- Suele contener información sobre de qué trata el documento, la navegación y también el título de la página-->
+
+        <nav></nav> <!-- Puede estar dentro del header y va a tener los links a las diferentes páginas de nuestro sitio -->
+
+        <section></section> <!-- Define una sección de contenido en nuestro documento -->
+
+        <article></article> <!-- Pueden estar dentro de secciones y se utilizan para encapsular contenido especifico, por ejemplo un articulo de un diario online o un post de un blog -->
+
+        <aside></aside> <!-- Sirve para definir contenido aparte, pero relacionado, al contenido que lo rodea. Ej: Una aclaración sobre algo particular en un articulo de enciclopedia -->
+
+        <footer></footer> <!-- Suele contener información sobre el autor, legales, contacto, links, entre otras cosas. -->
+
+        <div></div> <!-- Sirve para contener elementos u contenido dependiendo el caso de uso. Es una de las etiquetas más utilizadas debido a la maleabilidad y diversos usos que podemos darle. -->
+    <!-- -- -->
+
+    <!-- Etiquetas que contienen texto -->
+        <h1>Título de nuestra página</h1> <!-- Se recomienda utilizar 1 sola vez por página -->
+        <h2>Subtitulo menos importante</h2>
+        <h3>Subtitulo menos importante que el h2</h3>
+        <h4>Subtitulo menos importante que el h3</h4>
+        <h5>Subtitulo menos importante que el h4</h5>
+        <h6>Subtitulo menos importante de todos</h6>
+
+        <p>Sirve para escribir texto normal</p>
+
+        <b>Pone el texto en negrita</b>
+
+        <u>Subraya el texto</u>
+
+        <i>Pone el texto en itálicas</i>
+
+        <del>Tacha el texto con una linea</del>
+
+        <mark>Resalta el texto</mark>
+
+        <a href="https://www.youtube.com/c/developeando"> Visitá nuestro canal!</a> <!-- Nos permite poner texto subrayado con un hypervínculo -->
+
+        <b><u><i><del><mark>Lo más copado es que podemos usarlas todas juntas! Y funciona!</mark></del></i></u></b>
+    <!-- -- -->
+
+    <!-- Otras etiquetas -->
+        <img src="" alt=""> <!-- Nos permite poner imagenes ya sea de nuestra compu o de internet poniendo la ruta en el atributo src. En caso de que no se encuentre la imagen, podemos usar el alt para poner un texto alternativo -->
+
+        <br> <!-- Salto de línea (mete un enter) -->
+
+        <hr> <!-- Hace un salto de línea y nos agrega una línea divisoria -->
+
+        <button>Click me</button> <!-- Nos permite poner un botón al que le podemos dar funcionalidad con js -->
+    <!-- -- -->
+
+    <!-- Atributos más usados -->
+        <div id="elemento1">elemento</div> <!-- El id nos sirve para identificar elementos particulares y luego poder encontrarlos para estilarlos o aplicarles algun js. Los id no pueden repetirse en un mismo documento -->
+
+        <button disabled>Deshabilitado</button> <!-- Nos permite deshabilitar elementos por ejemplo un botón no clickeable -->
+
+        <div class="cuadrado-rojo"></div> <!-- Nos permite definir clases que podemos aplicar a varios elementos para así controlarlos a la vez o aplicarles el mismo css -->
+
+        <div width="100px" height="200px"></div> <!-- El width nos permite cambiar el ancho, y el height el alto del elemento. (esto es mejor hacerlo desde css en la mayoría de los casos) -->
+        
+        <div title="soy un div">div con título</div> <!-- El title (diferente de la etiqueta title) nos permite poner texto que aparece cuando el usuario pone el cursor sobre nuestro elemento -->
+    <!-- -- -->
+</body>
+</html>
