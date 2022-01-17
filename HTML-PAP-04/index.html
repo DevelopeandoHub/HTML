@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- La etiqueta lang le indica al buscador en qué idioma está escrito el sitio. Muy útil para los traductores como Google Translate -->
+<head>
+    <meta charset="UTF-8"> <!-- Esta etiqueta es imprescindible para el buscador a la hora de mostrar los textos de nuestro sitio. Para html5 se utiliza UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Con el viewport le indicamos al buscador que no debe achicar nuestro sitio ya que és o va a ser responsive. -->
+    <meta name="author" content="developeando">
+    <meta name="description" content="un blog hecho con html">
+    <meta name="keywords" content="html, developeando, blog">
+    <title>Blog</title>
+    <style>
+        body{
+            margin: 0 auto;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a mi Blog</h1>
+        <nav>
+            <a href="#">Ir al inicio</a>
+            <a href="#">Ir al medio</a>
+            <a href="#HistoriaVelero">DIY Velero</a> <!-- El href en este caso apunta a un id que está puesto en el titulo de una de las historias. Sirve para que cuando toquemos en el link nos lleve automaticamente a esa parte del sitio donde está el id. :D -->
+        </nav>
+    </header>
+
+    <hr>
+
+    <section>
+        <h2>Últimas Historias</h2>
+        <article>
+            <h3>El viaje a San Luis</h3>
+            <p>Todo comenzó en <b>México</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit nihil, voluptates perferendis sint ullam blanditiis.</p> <!-- Lorem impsum, clave a la hora de hacer mockups de sitios previo a que estos tengan el contenido posta -->
+            <img title="Fotito de Mexico" src="https://picsum.photos/200" alt="Fotito de Mexico"> <!-- Lorem Picsum, clave a la hora de poner fotos en un sitio previo a tener las originales -->
+            <p><mark>El taxista estaba <b>loco</b></mark> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, iure.</p>
+            <a href="#">Ir la historia completa</a>
+        </article>
+
+        <article>
+            <h3>Esa vez que hice acuatismo con el auto</h3>
+            <p>Todo comenzó en <b>la autopista</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit nihil, voluptates perferendis sint ullam blanditiis.</p>
+            <img title="Fotito del auto" src="https://picsum.photos/200" alt="Fotito del auto">
+            <p><mark>Y decidí entrar al <b>agua</b> <u>con el auto</u></mark> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, iure.</p>
+            <a href="#">Ir la historia completa</a>
+        </article>
+
+        <article>
+            <h3 id="HistoriaVelero">DIY Velero</h3>
+            <p>Armar un velero es algo que Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit nihil, voluptates perferendis sint ullam blanditiis.</p>
+            <img title="Fotito del velero" src="https://picsum.photos/200" alt="Fotito del velero"><br>
+            <a href="#">Ir la historia completa</a>
+        </article>
+
+        <aside>
+            <h4>Aprendé a escribir tus propias historias!</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sunt?</p>
+            <a href="#" target="_blank">Click acá!</a> <!-- El target _blank le indica al buscador que el siguiente link debe abrirse en una pestaña nueva -->
+        </aside>
+    </section>
+
+    <footer>
+        <hr>
+        <i>Todos los derechos reservados, cualquier similitud con la realidad es coincidencia</i>
+        <nav>
+            <a href="#">Volver arriba</a>
+        </nav>
+    </footer>
+</body>
+</html>
