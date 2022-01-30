@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action=""> <!-- Etiqueta que usamos para declarar un formulario -->
+        <fieldset> <!-- Etiqueta que se usa para agrupar campos y ordenar el form -->
+            <legend>Datos Personales</legend> <!-- Con esto, le ponemos un título al recuadro generado por el fieldset -->
+            <label for="name">Nombre</label> <!-- Los labels se utilizan para poner texto que haga referencia a un input -->
+            <input id="name" type="text" placeholder="Ingrese su nombre"> <!-- El input de tipo texto le permite al usuario ingresar texto -->
+            <br>
+            <label for="surname">Apellido</label>
+            <input id="surname" type="text" placeholder="Ingrese su apellido"> <!-- El placeholder es un texto de ayuda para el usuario, el mismo aparece en el campo que el usuario debe rellenar y desaparece apenas este le hace click -->
+            <br>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Ingrese su email"> <!-- El input de tipo email valida que el texto ingresado tenga un arroba @ -->
+            <br>
+            <label for="password">Contraseña</label>
+            <input id="password" type="password" placeholder="Ingrese una contraseña"> <!-- El input de tipo password oculta el texto ingresado por el usuario -->
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Datos de Viaje</legend>
+            <label for="premium">Asiento Premium</label>
+            <input id="premium" type="radio" value="asiento-premium" name="asiento"> <!-- El input type radio nos sirve para ofrecerle diferentes opciones de selección al usuario, limitándolo a elegir sólo una -->
+            <br>
+            <label for="eco-plus">Asiento Economy+</label>
+            <input id="eco-plus" type="radio" value="asiento-economy-pl" name="asiento"> <!-- Para que funcione correctamente le tenemos que asignar el mismo name a todas las opciones -->
+            <br>
+            <label for="eco">Asiento Economy</label>
+            <input id="eco" type="radio" value="asiento-economy" name="asiento">
+
+            <br><br>
+
+            <label for="vino-premium">Vino Premium</label>
+            <input id="vino-premium" type="checkbox" value="vino-premium" name="adicionales"> <!-- El input type checkbox hace lo mismo que el radio pero le permite al usuario seleccionar varias opciones a la vez -->
+            <br>
+            <label for="vino">Vino</label>
+            <input id="vino" type="checkbox" value="vino" name="adicionales">
+            <br>
+            <label for="manta">Manta</label>
+            <input id="manta" type="checkbox" value="manta" name="adicionales">
+
+            <br><br>
+
+            <label for="hoteles">Hoteles Disponibles</label>
+            <select name="hoteles" id="hoteles"> <!-- La etiqueta select genera un dropdown con varias opciones -->
+                <option disabled selected>Seleccione un hotel...</option> <!-- Cada opcion se pone en una etiqueta option -->
+                <option value="hotel-1">Abasto Hotel</option>
+                <option value="hotel-2">Ritz</option>
+                <option value="hotel-3">Islas Cayman Hotel</option>
+            </select>
+
+            <br><br>
+
+            <label for="color">Color Favorito</label>
+            <input id="color" type="color"> <!-- El input type color le permite al usuario elegir un color -->
+
+            <br><br>
+
+            <label for="range">Temperatura Asiento</label>
+            <span>15</span>
+            <input id="range" type="range" min="15" max="50"> <!-- El input type range genera un slider que le permite al usuario elegir entre un rango de valores numéricos -->
+            <span>50</span>
+        </fieldset>
+
+        <input type="submit"> <!-- Se utiliza para submittear (mandar) el form -->
+        <input type="reset"> <!-- Borra todos los datos del formulario. -->
+    </form>
+</body>
+</html>

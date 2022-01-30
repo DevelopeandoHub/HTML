@@ -1,0 +1,36 @@
+Te recomendamos ir poniendo los textos a medida que vas armando la estructura :)
+
+== 
+
+h1: Laboratoire des roses 🌹
+h2: Formulaire pour les clients
+p: Ce formulaire est destiné à fournir un service plus personnalisé à nos clients spécifiques
+
+Informations clients
+
+Nom Entrez votre nom
+Nom de famille Entres votre nom de famille
+Email Entrez un e-mail
+Je souhaite recevoir la newsletter quotidienne Oui  Non 
+
+Questions de routine quotidienne
+
+Appliquez-vous un parfum de notre marque ? Oui  Non
+Quand appliquez-vous le parfum?
+Matin
+Après-midi
+Soirée
+À quelle fréquence achetez-vous un nouveau parfum?
+Pas trop souvent -- Très souvent
+
+Goûts personnels
+
+Aimez-vous les animaux domestiques?
+Oui  Non
+Lequel de ces parfums préférez-vous?
+-Parfum "odeur de roses"
+-Chien édulcoré
+-Laitue dorée chic
+
+Actions
+Submit Reset

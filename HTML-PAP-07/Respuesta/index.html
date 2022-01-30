@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratoire des roses</title>
+    <style>
+        body {
+            margin: 0 auto;
+            max-width: 700px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Laboratoire des roses 🌹</h1>
+    <hr>
+    <h2>Formulaire pour les clients</h2>
+    <p>Ce formulaire est destiné à fournir un service plus personnalisé à nos clients spécifiques</p>
+    <hr>
+    <form action="">
+        <fieldset>
+            <legend>Informations clients</legend>
+            <label for="name">Nom</label>
+            <input id="name" type="text" placeholder="Entrez votre nom">
+            <label for="surname">Nom de famille </label>
+            <input id="surname" type="text" placeholder="Entrez votre nom de famille">
+            
+            <br>
+            
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Entrez un e-mail ">
+            
+            <br>
+            
+            <b>Je souhaite recevoir la newsletter quotidienne</b>
+            <label for="newsletter-yes">Oui</label>
+            <input id="newsletter-yes" type="radio" name="newsletter">
+            <label for="newsletter-no">Non</label>
+            <input id="newsletter-no" type="radio" name="newsletter">
+        </fieldset>
+
+        <fieldset>
+            <legend>Questions de routine quotidienne</legend>
+            <span>Appliquez-vous un parfum de notre marque ?</span>
+            <label for="question-1-yes">Oui</label>
+            <input id="question-1-yes" type="radio" name="brand-fragrance" value="Yes">
+            <label for="question-1-no">Non</label>
+            <input id="question-1-no" type="radio" name="brand-fragrance" value="No">
+            
+            <br><br>
+
+            <span>Quand appliquez-vous le parfum?</span>
+            <br>
+            <input id="question-2-morning" type="checkbox" name="time-day" value="morning">
+            <label for="question-2-morning">Matin</label>
+            <br>
+            <input id="question-2-afternoon" type="checkbox" name="time-day" value="afternoon">
+            <label for="question-2-afternoon">Après-midi</label>
+            <br>
+            <input id="question-2-evening" type="checkbox" name="time-day" value="evening">
+            <label for="question-2-evening">Soirée</label>
+
+            <br><br>
+
+            <label for="purchase-time">À quelle fréquence achetez-vous un nouveau parfum?</label>
+            <br>
+            <span>Pas trop souvent</span>
+            <input id="purchase-time" type="range" min="1" max="5" name="frequency">
+            <span>Très souvent</span>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Goûts personnels</legend>
+            <span>Aimez-vous les animaux domestiques?</span>
+            <br>
+            <label for="question-3-yes">Oui</label>
+            <input id="question-3-yes" type="radio" name="pets" value="Yes">
+            <label for="question-3-no">Non</label>
+            <input id="question-3-no" type="radio" name="pets" value="No">
+            
+            <br><br>
+
+            <label for="dropdown">Lequel de ces parfums préférez-vous?</label>
+            <select name="dropdown" id="dropdown">
+                <option value="1">Parfum "odeur de roses"</option>
+                <option value="2">Chien édulcoré</option>
+                <option value="3">Laitue dorée chic</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Actions</legend>
+            <input type="submit">
+            <input type="reset">
+        </fieldset>
+    </form>
+    <hr>
+</body>
+</html>
